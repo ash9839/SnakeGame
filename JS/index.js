@@ -74,7 +74,7 @@ function gameEngine() {
     //display snake
     board.innerHTML = "";
 
-    //samjh nahi aaya
+    
     snakeArr.forEach((e, index) => {
         snakeEle = document.createElement('div');
         snakeEle.style.gridRowStart = e.y;
@@ -106,7 +106,7 @@ window.requestAnimationFrame(main);
 //calling it once is just 1 shot
 window.addEventListener('keydown', e => {
     inputDir = { x: 0, y: 1 };//start game
-    // musicSound.play();
+    musicSound.play();
     moveSound.play();
     switch (e.key) {
         case "ArrowUp":
